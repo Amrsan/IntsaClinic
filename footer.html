@@ -1,0 +1,183 @@
+<style>
+    footer {
+        height: 600px;
+        display: flex;
+        /* background-image: url("BG\ pattern-10.jpg"); */
+        background-image: url("https://cdn.mos.cms.futurecdn.net/EofuTa42mfBXgFqVWHnGXV-1200-80.jpg");
+        /* background-color: gold; */
+        background-size: 85%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        align-items: start;
+        /* animation: moveRight 30s linear infinite; */
+        flex-direction: column;
+        /* animation: zoom 10s ease-in-out infinite; */
+        overflow: hidden;
+        
+        background-color: rgba(0, 0, 0, 0.5);
+        position: relative;
+        z-index: 1;
+    }
+
+    footer::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        /* grey filter with 50% opacity */
+        z-index: 0;
+    }
+    .img,
+    .footer-content,
+    .footer-logo,
+    .contact,
+    .footer-bottom {
+
+        position: relative;
+        z-index: 1;
+    }
+
+    /* @keyframes moveRight {
+        from {
+            background-position: 0 0;
+        }
+
+        to {
+            background-position: 1100px 0;
+
+        }
+    } */
+
+    /* @keyframes zoom {
+
+            0%,
+            100% {
+                background-size: 100%;
+            }
+
+            50% {
+                background-size: 110%;
+            }
+        } */
+
+    footer img {
+        width: 100%;
+
+    }
+
+
+    .footer-logo {
+        display: flex;
+        /* align-self: self-start; */
+        padding: 10px;
+        color: white;
+    }
+
+    .footer-logo img {
+        width: 20%;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+        flex: 1;
+    }
+
+    .contact {
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact h1 {
+        padding-bottom: 10px;
+        font-weight: 600;
+    }
+
+    .contact li {
+        padding-bottom: 8px;
+        text-align: end;
+        list-style: none;
+        font-weight: 650;
+        color: #006868;
+        text-decoration: none;
+    }
+
+    .contact li a {
+        color: snow;
+        text-decoration: none;
+    }
+
+    .contact li a:hover{
+        color: #eee;
+    }
+
+    .footer-bottom {
+        margin: auto;
+        margin-bottom: 10px;
+        display: block;
+        padding-right: 15px;
+        padding-left: 15px;
+        position: relative;
+        border-radius: 5px;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.2);
+        font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+        .footer-content {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+
+        .contact h1 {
+            text-align: left;
+        }
+    }
+
+    .text-white {
+        color: white;
+        text-decoration: none;
+        padding-left: 10px;
+    }
+
+    .text-white:hover{
+        color: #eee;
+    }
+</style>
+
+
+<footer>
+
+    <img class="img" src="download.svg" alt="">
+    <div class="footer-content">
+
+        <div class="footer-logo">
+            <img src="vertical color.png" alt="">
+
+        </div>
+        <div class="contact">
+            <h1>Contact Us</h1>
+            <ul>
+                <li>
+                    Whatsapp : <a href="https://wa.me/+2010955693586">010955693586</a>
+                </li>
+                <li>
+                    Phone : (+2)010955693586
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="footer-bottom" style="background-color: rgba(0, 0, 0, 0.2);">
+        Designed and Developed By
+        <a class="text-white" href="https://mdbootstrap.com/"> Fresh Health</a>
+        
+    </div>
+</footer>

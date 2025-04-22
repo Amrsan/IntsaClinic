@@ -1,0 +1,649 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bytesized&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
+
+
+    <title>Insta Clinic</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        header {
+            font-family: "Montserrat", sans-serif;
+            align-items: center;
+            flex-wrap: nowrap;
+            position: sticky;
+            margin: 0;
+            padding: 12px 24px;
+            display: flex;
+            background-color: #00989D;
+            justify-content: space-between;
+            box-shadow: 0 2px 4px rgba(6, 17, 118, .08), 0 4px 12px rgb(6, 17, 118, .08);
+        }
+
+        body {
+            min-width: unset;
+        }
+
+        @media only screen and (min-width : 1080px) {
+            .clinics {
+                width: 100%;
+                display: block;
+            }
+
+            .clinics h1 {
+                justify-self: center;
+            }
+
+            .container .card {
+                display: unset;
+                display: flex;
+                justify-content: space-between;
+                margin: 10px;
+
+            }
+        }
+
+
+
+        .container1 {
+            display: flex;
+            /* justify-content: flex-start; */
+
+        }
+
+        .container1 img {
+            width: 10%;
+            display: flex;
+
+
+        }
+
+        nav button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            border-radius: 20%;
+            color: #eee;
+            padding: 10px;
+            text-wrap: nowrap;
+        }
+
+        nav button:hover {
+            color: black;
+        }
+
+        nav {
+            padding: 20px;
+            /* width: 50px; */
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: end;
+            font-family: "Montserrat", sans-serif;
+
+        }
+
+        .section1 {
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            /* background-attachment: fixed; */
+            background-position: bottom;
+            align-items: center;
+            display: flex;
+            padding-top: 40px;
+            height: 65vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 100px 20px;
+            background-color: white;
+            /* background-image: url("pexels-juanpphotoandvideo-1242348.jpg"); */
+            /* box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25); */
+
+
+
+        }
+
+        .section2 {
+            display: flex;
+            padding: 20px;
+            justify-content: space-around;
+            align-items: center;
+            background-attachment: fixed;
+            background-position: center;
+            align-items: center;
+            display: flex;
+            padding-top: 80px;
+            height: auto;
+            background-size: cover;
+            /* background-color: #eee; */
+            flex-wrap: wrap;
+            /* background-image: url("BG\ pattern-10.jpg"); */
+
+
+
+
+
+        }
+
+        .section3 {
+            background-attachment: fixed;
+            background-position: center;
+            align-items: center;
+            display: flex;
+            padding-top: 80px;
+            height: 480px;
+            background-size: cover;
+            background-color: white;
+        }
+
+
+        .p1 {
+            /* width: 70%; */
+            text-wrap: wrap;
+            font-size: 18px;
+            font-family: "Montserrat", sans-serif;
+            display: flex;
+            padding: 10px;
+            margin-bottom: 40px;
+
+            justify-content: center;
+            color: black;
+            font-weight: 500;
+            top: 80px;
+        }
+
+        .launch-button {
+
+            border: 2px solid #00989D;
+            background-color: #6c63ff;
+            background-color: transparent;
+            color: black;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+            align-self: center;
+            transition: all 250ms ease-in-out;
+
+        }
+
+        .launch-button:hover {
+            scale: 1.1;
+            background-color: #00989D;
+        }
+
+        /* .b1 {
+            justify-content: space-between;
+            align-items: center;
+            display: inline-flex;
+            position: relative;
+            left: 300%;
+            cursor: pointer;
+            width: 140px;
+            height: 50px;
+            border-width: 1px;
+            color: #fff;
+            border-color: #00979D;
+            font-weight: 700;
+            border-top-left-radius: 28px;
+            border-top-right-radius: 28px;
+            border-bottom-left-radius: 28px;
+            border-bottom-right-radius: 28px;
+            background: #00979D;
+            padding: 10px 20px;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        .b1 i {
+            color: black;
+            right: 0;
+            padding: 17px 7px;
+            border-radius: 100%;
+            background-color: white;
+            opacity: 0.5;
+            position: absolute;
+            right: 0;
+            transition: width 0.3s ease;
+            width: 40px;
+            z-index: 1;
+        }
+
+        .b1:hover i {
+            border-top-left-radius: 28px;
+            border-top-right-radius: 28px;
+            border-bottom-left-radius: 28px;
+            border-bottom-right-radius: 28px;
+            width: 100%;
+            width: 125px;
+          
+        }
+
+        .b1:hover {
+            color: transparent;
+            background: #006868;
+        } */
+
+
+
+        /* From Uiverse.io by alexruix */
+        .card {
+            width: 190px;
+            height: 254px;
+            border-radius: 20px;
+            background: #f5f5f5;
+            position: relative;
+            padding: 1.8rem;
+            border: 4px solid #c3c6ce;
+            transition: 0.5s ease-out;
+            overflow: visible;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        .card-details {
+            color: black;
+            height: 100%;
+            gap: .5em;
+            display: grid;
+            place-content: center;
+        }
+
+        .card-button {
+            transform: translate(-50%, 125%);
+            width: 60%;
+            border-radius: 1rem;
+            border: none;
+            background-color: #006868;
+            color: #fff;
+            font-size: 1rem;
+            padding: .5rem 1rem;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            opacity: 0;
+            transition: 0.3s ease-out;
+            cursor: pointer;
+        }
+
+        .text-body {
+            color: rgb(134, 134, 134);
+            cursor: pointer;
+            text-align: center;
+        }
+
+        /*Text*/
+        .text-title {
+            justify-self: center;
+            cursor: pointer;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        /*Hover*/
+        .card:hover {
+            cursor: pointer;
+            border-color: #006868;
+            /* box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25); */
+            box-shadow: 0 0 10px
+        }
+
+        .card-details i {
+            justify-self: center;
+            /* width: 20px; */
+            font-size: 100px;
+        }
+
+
+
+        /* .card:not(:hover) {
+            opacity: 0.6;
+        } */
+
+        .card-details svg {
+            justify-self: center;
+        }
+
+        .card:hover .card-button {
+            transform: translate(-50%, 50%);
+            opacity: 1;
+        }
+
+        .card:hover .section2 {
+            background-color: #c3c6ce;
+        }
+
+        /* .section2:hover .card {
+            filter: brightness(0.5);
+        } */
+
+        .section2 .card:hover {
+            filter: brightness(1);
+            transform: scale(1.05);
+        }
+
+        footer {
+            height: 500px;
+            display: flex;
+            background-image: url("BG\ pattern-10.jpg");
+            background-size: 100%;
+            background-position: center;
+            align-items: start;
+            /* animation: moveRight 30s linear infinite;` */
+            /* animation: zoom 10s ease-in-out infinite; */
+
+        }
+
+        @keyframes moveRight {
+            from {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: 1100px 0;
+
+            }
+        }
+
+        /* @keyframes zoom {
+
+            0%,
+            100% {
+                background-size: 100%;
+            }
+
+            50% {
+                background-size: 110%;
+            }
+        } */
+
+        footer img {
+            width: 100%;
+
+        }
+
+
+        div.container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        div.container:hover> :not(:hover) {
+            opacity: 0.5;
+            filter: blur(10px);
+            transform: scale(0.8);
+            cursor: pointer;
+        }
+
+        p {
+            font-family: "Montserrat", sans-serif;
+
+        }
+
+
+        .title1 {
+            align-self: center;
+            display: flex;
+            font-family: "Montserrat", sans-serif;
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+
+        .main-logo {
+            display: flex;
+            width: 70%;
+            height: 70%;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .section2 h1 {
+            display: flex;
+            color: white;
+        }
+
+        .underline {
+            display: flex;
+            flex-direction: column;
+            align-self: start;
+            width: 60px;
+            height: 2px;
+            background-color: white;
+            margin: 10px auto;
+        }
+
+        .section3 {
+            display: flex;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            background-color: #c3c6ce;
+            flex-direction: column;
+        }
+        .section3 img{
+            width: 100%;
+            display: flex;
+            justify-self:end ;
+        }
+        .object1{
+            width: 80%;
+        }
+    </style>
+</head>
+<template id="header-template">
+    <header>
+        <div class="container1">
+
+            <img src="vertical white.png" alt="">
+        </div>
+        <nav>
+            <button>
+                Home
+            </button>
+            <button onclick="location.href='Aboutus.html'">
+                About Us
+            </button>
+            <button>
+                Contact Us
+            </button>
+            <button>
+                Privacy & Terms
+            </button>
+        </nav>
+
+    </header>
+</template>
+<div id="header"></div>
+<!-- /////////////////////////////////////////////////////////////////////////////// -->
+
+<body>
+    <main>
+        <section class="section1">
+            <div class="main-logo">
+                <script>
+                    lottie.loadAnimation({
+                        container: document.querySelector('.main-logo'), // the dom element
+                        renderer: 'svg',
+                        loop: false,
+                        autoplay: true,
+                        path: 'instaclinic-logo.json' // the path to your JSON animation
+                    });
+                </script>
+            </div>
+            <!-- <div class="main-logo">
+                <img src="vertical color.png" alt="">
+            </div> -->
+            <!-- <div class="title1">
+                <h1>InstaClinic</h1>
+            </div> -->
+            <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa accusantium veniam,
+                velit, quo reiciendis eveniet iusto unde et praesentium ex accusamus laboriosam ea! Quos nesciunt
+                dignissimos praesentium culpa iure velit.</p>
+            <button class="launch-button">Explore</button>
+            <!-- <div>
+                <button class="b1">
+                    <span>
+                        Explore
+                    </span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div> -->
+        </section>
+        <section class="section2">
+            <div class="clinics">
+                <h1>Our Clinics</h1>
+                <div class="underline"></div>
+            </div>
+
+            <div class="container">
+                <div class="card">
+                    <div class="card-details">
+                        <i class="fa-solid fa-hospital" style="color: #1a5058;"></i>
+                        <p class="text-title">Emergency</p>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <!-- <button class="card-button">More info</button> -->
+                </div>
+
+                <div class="card">
+                    <div class="card-details">
+                        <i class="fa-solid fa-user-nurse" style="color: #1a5058;"></i>
+                        <p class="text-title">Nurcing</p>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <!-- <button class="card-button">More info</button> -->
+                </div>
+
+                <div class="card">
+                    <div class="card-details">
+                        <i class="fa-solid fa-hand-holding-medical" style="color: #1a5058;"></i>
+                        <p class="text-title">Dialysis</p>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <!-- <button class="card-button">More info</button> -->
+                </div>
+
+                <div class="card">
+                    <div class="card-details">
+                        <i class="fa-solid fa-masks-theater" style="color: #1a5058;"></i>
+                        <p class="text-title">Psychiatric</p>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <!-- <button class="card-button">More info</button> -->
+                </div>
+
+                <div class="card">
+                    <div class="card-details">
+                        <i class="fa-solid fa-tooth" style="color: #1a5058;"></i>
+                        <p class="text-title">Dental</p>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <!-- <button class="card-button">More info</button> -->
+                </div>
+
+                <div class="card">
+                    <div class="card-details">
+                        <i class="fa-solid fa-brain" style="color: #1a5058;"></i>
+                        <p class="text-title">Neurology</p>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <!-- <button class="card-button">More info</button> -->
+                </div>
+
+                <div class="card">
+                    <div class="card-details">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 64 64">
+                            <path fill="#1a5058"
+                                d="M30.899 50.352a1.76 1.76 0 0 0-2.486 0l-8.278 8.272l-1.03-1.03l11.1-11.085a1.758 1.758 0 0 0-2.486-2.488L16.622 55.108l-1.028-1.028l12.91-12.899a1.759 1.759 0 0 0-2.483-2.488L13.109 51.591l-1.028-1.03l10.132-10.124a1.759 1.759 0 0 0-2.485-2.486L6.693 50.961a958 958 0 0 1-.019-5.572c0-2.842-3.591-3.263-3.77-3.065C2.729 42.53.938 62.266.938 62.266H21.49l1.145-1.145l-.015-.013l8.281-8.274a1.76 1.76 0 0 0 .001-2.486z" />
+                            <path fill="#1a5058"
+                                d="M40.146 1.963c-10.392 0-19.967 7.796-21.963 16.381c-.447 1.914-.947 6.898-.947 6.898l-4.775 12.034a1.844 1.844 0 0 0 1.702 2.562h1.63l2.911-2.909a3.2 3.2 0 0 1 5.402 1.632l.891-.89a3.2 3.2 0 0 1 4.592 4.454a3.204 3.204 0 0 1 1.637 5.405l-.93.928c.596.121 1.164.41 1.625.871a3.205 3.205 0 0 1 0 4.532l-2.065 2.062v6.345h24.447V42.841c5.322-4.185 8.751-10.691 8.751-17.99c0-12.644-10.251-22.889-22.908-22.889zm-17.269 27.85a2.555 2.555 0 1 1-.005-5.11a2.555 2.555 0 0 1 .005 5.11m11.956 5.953c.638 0 1.166.523 1.166 1.159c0 .644-.528 1.163-1.166 1.163a1.162 1.162 0 1 1 0-2.322m-.694 7.269a1.164 1.164 0 1 1 .004-2.328a1.164 1.164 0 0 1-.004 2.328m2.484 5.006a1.75 1.75 0 0 1-1.598-1.888a1.75 1.75 0 0 1 1.89-1.587c.957.082 1.67.928 1.584 1.883a1.737 1.737 0 0 1-1.876 1.591zm1.676-6.973a1.74 1.74 0 1 1 0-3.48c.955 0 1.733.778 1.733 1.739s-.778 1.741-1.733 1.741m2.473 3.649c-.646 0-1.17-.518-1.17-1.165a1.167 1.167 0 0 1 2.332 0c0 .646-.519 1.165-1.162 1.165m2.6-6.761h-.407v-2.077l.402-.004a4.73 4.73 0 0 0 4.715-4.704a4.73 4.73 0 0 0-4.713-4.704l-.404-.002V24.39h.407c3.745 0 6.789 3.04 6.789 6.781s-3.044 6.786-6.789 6.786z" />
+                        </svg>
+                        <p class="text-title">Dermatology</p>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <!-- <button class="card-button">More info</button> -->
+                </div>
+            </div>
+        </section>
+        <!-- <section class="section3">             
+
+            <div class="object1">
+
+                <script>
+                    lottie.loadAnimation({
+                        container: document.querySelector('.object1'), // the dom element
+                        renderer: 'svg',
+                        loop: true,
+                        autoplay: true,
+                        path: 'Animation - 1732900583891.json' // the path to your JSON animation
+                    });
+                </script>
+            </div>
+               
+        </section> -->
+    </main>
+
+
+    <template id="footer-template">
+
+    </template>
+    <div id="footer"></div>
+    <script>
+        // Function to load the header from the header.html file
+        window.onload = function loadHeader() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                    const path = window.location.pathname;
+                    const buttons = document.querySelectorAll('.btn'); // make sure your buttons have this class
+
+                buttons.forEach(btn => {
+                    const btnHref = btn.getAttribute('onclick')?.match(/'(.*?)'/)?.[1];
+                    if (btnHref && path.endsWith(btnHref)) {
+                        btn.classList.add('active');
+                    } else {
+                        btn.classList.remove('active');
+                    }
+                });
+            })
+                .catch(error => console.error('Error loading header:', error));
+
+            // Load the header content when the page loads
+
+
+
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+
+
+
+        }
+    </script>
+</body>
+
+</html>

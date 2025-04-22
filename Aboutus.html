@@ -1,0 +1,202 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bytesized&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Montserrat", sans-serif;
+        }
+
+
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap: 8px;
+        }
+
+        .parent p {
+            font-size: large;
+        }
+
+        .div1 {
+            grid-row: span 3 / span 3;
+            grid-column-start: 2;
+            grid-row-start: 3;
+        }
+
+
+        .div2 {
+            grid-row: span 3 / span 3;
+            grid-column-start: 4;
+            grid-row-start: 3;
+        }
+
+        .div3 {
+            grid-row: span 2 / span 2;
+            grid-column-start: 2;
+            grid-row-start: 1;
+            place-self: end;
+            justify-self: start;
+        }
+
+        .div3 h1 {
+            font-weight: 500;
+            color: goldenrod;
+            /* opacity: 80%; */
+        }
+
+
+        .parent1 {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap: 8px;
+        }
+
+        .div4 {
+            grid-column: span 2 / span 2;
+            grid-row: span 2 / span 2;
+            grid-row-start: 4;
+            text-align: center;
+        }
+
+        .div5 {
+            grid-column: span 2 / span 2;
+            grid-row: span 2 / span 2;
+            grid-column-start: 3;
+            grid-row-start: 4;
+            text-align: center;
+        }
+
+        .div6 {
+            grid-column: span 2 / span 2;
+            grid-row: span 2 / span 2;
+            grid-column-start: 5;
+            grid-row-start: 4;
+            text-align: center;
+        }
+
+        .parent1 h1 {
+            font-size: x-large;
+            font-weight: 500;
+        }
+
+        .parent1 p {
+            font-size: large;
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header"></div>
+    
+    <main>
+        <section class="s1">
+
+
+            <div class="parent">
+                <div class="div1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quae magni placeat eos aut quidem
+                        beatae consequatur ea velit officia, quaerat blanditiis error similique eligendi vel odit
+                        aliquam repellendus quis!
+                    </p>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos libero itaque fugiat repellendus
+                        distinctio optio, aliquam inventore rerum earum eveniet quod perferendis a veritatis culpa, vero
+                        ipsa ipsum nostrum neque.
+                    </p>
+                </div>
+                <div class="div2">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus debitis unde qui in
+                        recusandae exercitationem praesentium deserunt reiciendis rerum eveniet quis, sed eos non ea
+                        quidem asperiores quod labore. Quas!
+                    </p>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minus molestias animi aliquam
+                        laudantium temporibus tempora rerum ab, eveniet accusantium modi. Vitae ratione sapiente dolorem
+                        tenetur iste velit, aliquam quo!
+                    </p>
+                </div>
+                <div class="div3">
+                    <h1>About InstaClinic</h1>
+                </div>
+            </div>
+            <div class="parent1">
+                <div class="div4">
+                    <h1>Our Mission</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur blanditiis ipsum pers</p>
+                </div>
+                <div class="div5">
+                    <h1>Our Vision</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur blanditiis ipsum pers</p>
+                </div>
+                <div class="div6">
+                    <h1>Our Values</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur blanditiis ipsum pers</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="s2">
+
+        </section>
+    </main>
+
+
+    <div id="footer"></div>
+
+    <script>
+        // Function to load the header from the header.html file
+        window.onload = function loadHeader() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                    const path = window.location.pathname;
+                    const buttons = document.querySelectorAll('.btn'); // make sure your buttons have this class
+
+                buttons.forEach(btn => {
+                    const btnHref = btn.getAttribute('onclick')?.match(/'(.*?)'/)?.[1];
+                    if (btnHref && path.endsWith(btnHref)) {
+                        btn.classList.add('active');
+                    } else {
+                        btn.classList.remove('active');
+                    }
+                });
+            })
+                .catch(error => console.error('Error loading header:', error));
+
+            // Load the header content when the page loads
+
+
+
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+
+
+
+        }
+    </script>
+</body>
+
+</html>

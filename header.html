@@ -1,0 +1,87 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    header {
+        font-family: "Montserrat", sans-serif;
+        align-items: center;
+        flex-wrap: nowrap;
+        position: sticky;
+        margin: 0;
+        padding: 12px 24px;
+        display: flex;
+        background-color: #00989D;
+        justify-content: space-between;
+        box-shadow: 0 2px 4px rgba(6, 17, 118, .08), 0 4px 12px rgb(6, 17, 118, .08);
+    }
+
+    .container1 {
+        display: flex;
+        /* justify-content: flex-start; */
+
+    }
+
+    .container1 img {
+        width: 10%;
+        display: flex;
+
+
+    }
+
+    nav button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        border-radius: 20%;
+        color: #eee;
+        padding: 10px;
+        text-wrap: nowrap;
+    }
+
+
+
+    nav button:hover {
+        color: black;
+        font-weight: bold;
+    }
+
+
+    nav {
+        padding: 20px;
+        /* width: 50px; */
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: end;
+        font-family: "Montserrat", sans-serif;
+
+    }
+
+    .btn.active {
+        color: black;
+        font-weight: bold;
+    }
+</style>
+<header>
+    <div class="container1">
+
+        <img src="vertical white.png" alt="">
+    </div>
+    <nav>
+        <button class="btn" onclick="location.href='Home.html'">
+            Home
+        </button>
+        <button class="btn" onclick="location.href='Aboutus.html'">
+            About Us
+        </button>
+        <button class="btn" onclick="location.href='Contactus.html'">
+            Contact Us
+        </button>
+        <button class="btn" onclick="location.href='Privacy.html'">
+            Privacy & Terms
+        </button>
+    </nav>
+    
+</header>
