@@ -43,10 +43,15 @@
             .clinics {
                 width: 100%;
                 display: block;
+                
             }
 
             .clinics h1 {
                 justify-self: center;
+                text-decoration: underline;
+                text-underline-offset: 10px;
+
+
             }
 
             .container .card {
@@ -431,7 +436,7 @@
             margin: 10px auto;
         }
 
-        .section3 {
+        /* .section3 {
             display: flex;
             padding: 15px;
             display: flex;
@@ -443,9 +448,79 @@
             width: 100%;
             display: flex;
             justify-self:end ;
-        }
-        .object1{
+        } */
+        .object1 {
             width: 80%;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .section2 div {
+                justify-content: center;
+            }
+            
+            .clinics {
+                width: 100%;
+                display: block;
+                
+            }
+
+            .clinics h1 {
+                justify-self: center;
+                text-decoration: underline;
+                text-underline-offset: 10px;
+            }
+
+            .main-logo {
+                width: 120%;
+            }
+
+            
+        }
+        @media only screen and (min-width: 900px) {
+            .clinics {
+                width: 100%;
+                display: block;
+                
+            }
+            .card{
+                margin: 10px;
+            }
+
+            .clinics h1 {
+                justify-self: center;
+                text-decoration: underline;
+                text-underline-offset: 10px;
+
+
+            }
+        }
+
+        @media only screen and (min-width: 500px) {
+            .section2 div {
+                justify-content: center;
+            }
+            .clinics {
+                width: 100%;
+                display: block;
+                
+            }
+            .card{
+                margin: 10px;
+            }
+
+            .clinics h1 {
+                justify-self: center;
+                text-decoration: underline;
+                text-underline-offset: 10px;
+            }
+            .main-logo {
+                width: 80%;
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            .main-logo {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -509,11 +584,12 @@
 
             </div> -->
         </section>
+        <div class="clinics">
+            <h1>Our Clinics</h1>
+            <div class="underline"></div>
+        </div>
         <section class="section2">
-            <div class="clinics">
-                <h1>Our Clinics</h1>
-                <div class="underline"></div>
-            </div>
+
 
             <div class="container">
                 <div class="card">
@@ -581,6 +657,7 @@
                         <p class="text-title">Dermatology</p>
                         <p class="text-body">Here are the details of the card</p>
                     </div>
+
                     <!-- <button class="card-button">More info</button> -->
                 </div>
             </div>
@@ -618,15 +695,15 @@
                     const path = window.location.pathname;
                     const buttons = document.querySelectorAll('.btn'); // make sure your buttons have this class
 
-                buttons.forEach(btn => {
-                    const btnHref = btn.getAttribute('onclick')?.match(/'(.*?)'/)?.[1];
-                    if (btnHref && path.endsWith(btnHref)) {
-                        btn.classList.add('active');
-                    } else {
-                        btn.classList.remove('active');
-                    }
-                });
-            })
+                    buttons.forEach(btn => {
+                        const btnHref = btn.getAttribute('onclick')?.match(/'(.*?)'/)?.[1];
+                        if (btnHref && path.endsWith(btnHref)) {
+                            btn.classList.add('active');
+                        } else {
+                            btn.classList.remove('active');
+                        }
+                    });
+                })
                 .catch(error => console.error('Error loading header:', error));
 
             // Load the header content when the page loads

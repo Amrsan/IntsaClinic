@@ -19,8 +19,10 @@
         .parent {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(5, 1fr);
+            grid-template-rows: auto auto auto auto auto;
             gap: 8px;
+            margin-bottom: 30px;
+            margin-top: 30px;
         }
 
         .parent p {
@@ -28,60 +30,57 @@
         }
 
         .div1 {
-            grid-row: span 3 / span 3;
-            grid-column-start: 2;
-            grid-row-start: 3;
+            grid-column: 2;
+            grid-row: 3 / span 3;
         }
 
-
         .div2 {
-            grid-row: span 3 / span 3;
-            grid-column-start: 4;
-            grid-row-start: 3;
+            grid-column: 4;
+            grid-row: 3 / span 3;
         }
 
         .div3 {
-            grid-row: span 2 / span 2;
-            grid-column-start: 2;
-            grid-row-start: 1;
-            place-self: end;
-            justify-self: start;
+            grid-column: 2;
+            grid-row: 1;
+            margin-top: 10px;
+            /* Reduced space at top */
+
         }
 
         .div3 h1 {
-            font-weight: 500;
+            font-weight: 600;
             color: goldenrod;
-            /* opacity: 80%; */
-        }
+            color: #F9E79F;
+            background-image: linear-gradient(45deg, #F9E79F, #F2D76B, #E9C536, #E1B302);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
 
+        }
 
         .parent1 {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
-            grid-template-rows: repeat(5, 1fr);
+            grid-template-rows: auto auto auto auto auto;
             gap: 8px;
+            margin-top: 100px;
         }
 
         .div4 {
-            grid-column: span 2 / span 2;
-            grid-row: span 2 / span 2;
-            grid-row-start: 4;
+            grid-column: 1 / span 2;
+            grid-row: 4 / span 2;
             text-align: center;
         }
 
         .div5 {
-            grid-column: span 2 / span 2;
-            grid-row: span 2 / span 2;
-            grid-column-start: 3;
-            grid-row-start: 4;
+            grid-column: 3 / span 2;
+            grid-row: 4 / span 2;
             text-align: center;
         }
 
         .div6 {
-            grid-column: span 2 / span 2;
-            grid-row: span 2 / span 2;
-            grid-column-start: 5;
-            grid-row-start: 4;
+            grid-column: 5 / span 2;
+            grid-row: 4 / span 2;
             text-align: center;
         }
 
@@ -94,13 +93,18 @@
             font-size: large;
             font-weight: 400;
         }
+
+        #footer {
+
+            margin-top: 100px;
+        }
     </style>
 </head>
 
 <body>
 
     <div id="header"></div>
-    
+
     <main>
         <section class="s1">
 
@@ -171,15 +175,15 @@
                     const path = window.location.pathname;
                     const buttons = document.querySelectorAll('.btn'); // make sure your buttons have this class
 
-                buttons.forEach(btn => {
-                    const btnHref = btn.getAttribute('onclick')?.match(/'(.*?)'/)?.[1];
-                    if (btnHref && path.endsWith(btnHref)) {
-                        btn.classList.add('active');
-                    } else {
-                        btn.classList.remove('active');
-                    }
-                });
-            })
+                    buttons.forEach(btn => {
+                        const btnHref = btn.getAttribute('onclick')?.match(/'(.*?)'/)?.[1];
+                        if (btnHref && path.endsWith(btnHref)) {
+                            btn.classList.add('active');
+                        } else {
+                            btn.classList.remove('active');
+                        }
+                    });
+                })
                 .catch(error => console.error('Error loading header:', error));
 
             // Load the header content when the page loads
