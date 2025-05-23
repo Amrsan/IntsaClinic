@@ -44,6 +44,7 @@
             flex-direction: column;
             align-items: center;
             width: 100%;
+            background-color: #eee;
         }
 
         @media only screen and (min-width : 1080px) {
@@ -124,7 +125,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             padding: 100px 20px;
-            background-color: white;
+            background-color: #eee;
             /* background-image: url("pexels-juanpphotoandvideo-1242348.jpg"); */
             /* box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25); */
 
@@ -146,6 +147,7 @@
             background-size: cover;
             /* background-color: #eee; */
             flex-wrap: wrap;
+            background-color: #eee;
             /* background-image: url("BG\ pattern-10.jpg"); */
 
 
@@ -162,7 +164,7 @@
             padding-top: 80px;
             height: 480px;
             background-size: cover;
-            background-color: white;
+            background-color: #eee;
         }
 
 
@@ -246,7 +248,7 @@
             border-bottom-right-radius: 28px;
             width: 100%;
             width: 125px;
-          
+
         }
 
         .b1:hover {
@@ -262,6 +264,8 @@
             height: 254px;
             border-radius: 20px;
             background: #f5f5f5;
+            /* background: #00979D; */
+
             position: relative;
             padding: 1.8rem;
             border: 4px solid #c3c6ce;
@@ -406,11 +410,11 @@
             align-self: start;
             width: 60px;
             height: 2px;
-            background-color: white;
+            /* background-color: white; */
             margin: 10px auto;
         }
 
-      
+
         .object1 {
             width: 80%;
         }
@@ -535,7 +539,9 @@
                         renderer: 'svg',
                         loop: false,
                         autoplay: true,
-                        path: 'instaclinic-logo.json' // the path to your JSON animation
+
+                        path: 'instaclinic-logo (2).json' // the path to your JSON animation
+
                     });
                 </script>
             </div>
@@ -548,7 +554,7 @@
             <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa accusantium veniam,
                 velit, quo reiciendis eveniet iusto unde et praesentium ex accusamus laboriosam ea! Quos nesciunt
                 dignissimos praesentium culpa iure velit.</p>
-            <button class="launch-button">Explore</button>
+            <button id="explore-btn" class="launch-button">Explore</button>
             <!-- <div>
                 <button class="b1">
                     <span>
@@ -559,69 +565,130 @@
 
             </div> -->
         </section>
-        <div class="clinics">
+        <div id="clinics-section" class="clinics">
             <h1>Our Clinics</h1>
-            <div class="underline"></div>
+            <!-- <div class="underline"></div> -->
         </div>
         <section class="section2">
 
 
             <div class="container">
-                <div class="card">
+                <div class="card" onclick="location.href='emergency.html'">
                     <div class="card-details">
                         <i class="fa-solid fa-hospital" style="color: #1a5058;"></i>
                         <p class="text-title">Emergency</p>
-                        <p class="text-body">Here are the details of the card</p>
+                        <p class="text-body">24/7 emergency medical services</p>
                     </div>
                     <!-- <button class="card-button">More info</button> -->
                 </div>
 
-                <div class="card">
+                <div class="card" onclick="location.href='nursing.html'">
                     <div class="card-details">
                         <i class="fa-solid fa-user-nurse" style="color: #1a5058;"></i>
-                        <p class="text-title">Nurcing</p>
-                        <p class="text-body">Here are the details of the card</p>
+                        <p class="text-title">Home Nursing</p>
+                        <p class="text-body">Professional nursing care services</p>
                     </div>
                     <!-- <button class="card-button">More info</button> -->
                 </div>
 
-                <div class="card">
+                <div class="card" onclick="location.href='dialysis.html'">
                     <div class="card-details">
                         <i class="fa-solid fa-hand-holding-medical" style="color: #1a5058;"></i>
                         <p class="text-title">Dialysis</p>
-                        <p class="text-body">Here are the details of the card</p>
+                        <p class="text-body">Comprehensive dialysis services</p>
                     </div>
                     <!-- <button class="card-button">More info</button> -->
                 </div>
 
-                <div class="card">
+                <div class="card" onclick="location.href='Radio.html'">
                     <div class="card-details">
-                        <i class="fa-solid fa-masks-theater" style="color: #1a5058;"></i>
-                        <p class="text-title">Psychiatric</p>
-                        <p class="text-body">Here are the details of the card</p>
+                        <i class="fa-solid fa-radiation" style="color: #1a5058;"></i>
+                        <p class="text-title">Radiology</p>
+                        <p class="text-body">Diagnostic imaging services</p>
                     </div>
                     <!-- <button class="card-button">More info</button> -->
                 </div>
 
-                <div class="card">
+                <div class="card" onclick="location.href='dental.html'">
                     <div class="card-details">
                         <i class="fa-solid fa-tooth" style="color: #1a5058;"></i>
                         <p class="text-title">Dental</p>
-                        <p class="text-body">Here are the details of the card</p>
+                        <p class="text-body">Complete dental care services</p>
                     </div>
                     <!-- <button class="card-button">More info</button> -->
                 </div>
 
-                <div class="card">
+                 <div class="card" onclick="location.href='Orthopedic.html'">
                     <div class="card-details">
-                        <i class="fa-solid fa-brain" style="color: #1a5058;"></i>
-                        <p class="text-title">Neurology</p>
-                        <p class="text-body">Here are the details of the card</p>
+                        <i class="fa-solid fa-bone" style="color: #1a5058;"></i>
+                        <p class="text-title">Orthopedic</p>
+                        <p class="text-body">Complete dental care services</p>
                     </div>
                     <!-- <button class="card-button">More info</button> -->
                 </div>
 
-                <div class="card">
+                <div class="card" onclick="location.href='Lab.html'">
+                    <div class="card-details">
+                        <i class="fa-solid fa-microscope" style="color: #1a5058;"></i>
+                        <p class="text-title">Lab Sampling</p>
+                        <p class="text-body">Complete dental care services</p>
+                    </div>
+                    <!-- <button class="card-button">More info</button> -->
+                </div>
+
+                <div class="card" onclick="location.href='physio.html'">
+                    <div class="card-details">
+                        <!-- <i class="fa-solid fa-tooth" style="color: #1a5058;"></i> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" id="physiotherapeutic" viewBox="0 0 1000 1000">
+                            <rect width="800" height="78.27" x="100" y="723.91" rx="17.81" style="fill:#1a5058"></rect>
+                            <circle cx="237.39" cy="644.48" r="66.24" style="fill:#1a5058"></circle>
+                            <circle cx="571.26" cy="251.73" r="53.91" style="fill:#1a5058"></circle>
+                            <path
+                                d="M697.4,489.85V597.29c0,12.89-10.55,23.78-23,23.79h-.22a22.93,22.93,0,0,1-22.82-22.36c0-2.66,0-55.58,0-88Z"
+                                style="fill:#1a5058"></path>
+                            <path
+                                d="M885.57,672.74a31.38,31.38,0,0,1-31.39,31.17H357.84A40.92,40.92,0,0,1,329,691.81a38.58,38.58,0,0,1-11.47-27.58A39.42,39.42,0,0,1,357,625.12H564.69a43,43,0,0,0,43-44.25c-.48-17.92-12.42-33.25-28.73-39.21V504.86a63.39,63.39,0,0,1,37.23-57.67l74-33.43.27-.12,103.68-46.85a26.15,26.15,0,0,1,21.53,47.66L703.3,465.23h0l-65.48,29.59a11,11,0,0,0-6.51,10v79.26c0,12.67,0,14.63,0,15a42.89,42.89,0,0,0,42.74,42h.28l33.2,0H853.45a32.68,32.68,0,0,1,23,9.65A30.76,30.76,0,0,1,885.57,672.74Z"
+                                style="fill:#1a5058"></path>
+                            <path
+                                d="M503.45,549a10,10,0,0,0,10,10H564c12.76,0,23.4,10.05,23.74,22.41a23.06,23.06,0,0,1-23,23.7H508.85A61.16,61.16,0,0,1,448.55,544V468a96.37,96.37,0,0,1,96.26-96.26h56.33a95.33,95.33,0,0,1,69,29.15L608,429a83.41,83.41,0,0,0-49,75.89V539H513.45A10,10,0,0,0,503.45,549Z"
+                                style="fill:#1a5058"></path>
+                        </svg>
+
+                        <p class="text-title">Physiotherapy</p>
+                        <p class="text-body">Complete Physiotherapy services</p>
+                    </div>
+                    <!-- <button class="card-button">More info</button> -->
+                </div>
+
+                <div class="card" onclick="location.href='pediatric.html'">
+                    <div class="card-details">
+                        <i class="fa-solid fa-child" " style="color: #1a5058;"></i>
+                        <p class="text-title">Pediatric</p>
+                        <p class="text-body">Pediatric care services</p>
+                    </div>
+                    <!-- <button class="card-button">More info</button> -->
+                </div>
+
+                  <div class="card" onclick="location.href='general-medicine.html'">
+                    <div class="card-details">
+                        <i class="fa-solid fa-medkit" style="color: #1a5058;"></i>
+                        <p class="text-title" style="text-align: center;">General medicine</p>
+                        <p class="text-body">Providing comprehensive medical care</p>
+                    </div>
+                    <!-- <button class="card-button">More info</button> -->
+                </div>
+
+                <div class="card" onclick="location.href='general-surgery.html'">
+                    <div class="card-details">
+                        <i class="fa-solid fa-syringe" style="color: #1a5058;"></i>
+                        <p class="text-title" style="text-align: center;">General surgery</p>
+                        <p class="text-body">Providing comprehensive surgical care</p>
+                    </div>
+                    <!-- <button class="card-button">More info</button> -->
+                </div>
+
+
+                <div class="card" onclick="location.href='dermatology.html'">
                     <div class="card-details">
                         <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 64 64">
                             <path fill="#1a5058"
@@ -630,14 +697,14 @@
                                 d="M40.146 1.963c-10.392 0-19.967 7.796-21.963 16.381c-.447 1.914-.947 6.898-.947 6.898l-4.775 12.034a1.844 1.844 0 0 0 1.702 2.562h1.63l2.911-2.909a3.2 3.2 0 0 1 5.402 1.632l.891-.89a3.2 3.2 0 0 1 4.592 4.454a3.204 3.204 0 0 1 1.637 5.405l-.93.928c.596.121 1.164.41 1.625.871a3.205 3.205 0 0 1 0 4.532l-2.065 2.062v6.345h24.447V42.841c5.322-4.185 8.751-10.691 8.751-17.99c0-12.644-10.251-22.889-22.908-22.889zm-17.269 27.85a2.555 2.555 0 1 1-.005-5.11a2.555 2.555 0 0 1 .005 5.11m11.956 5.953c.638 0 1.166.523 1.166 1.159c0 .644-.528 1.163-1.166 1.163a1.162 1.162 0 1 1 0-2.322m-.694 7.269a1.164 1.164 0 1 1 .004-2.328a1.164 1.164 0 0 1-.004 2.328m2.484 5.006a1.75 1.75 0 0 1-1.598-1.888a1.75 1.75 0 0 1 1.89-1.587c.957.082 1.67.928 1.584 1.883a1.737 1.737 0 0 1-1.876 1.591zm1.676-6.973a1.74 1.74 0 1 1 0-3.48c.955 0 1.733.778 1.733 1.739s-.778 1.741-1.733 1.741m2.473 3.649c-.646 0-1.17-.518-1.17-1.165a1.167 1.167 0 0 1 2.332 0c0 .646-.519 1.165-1.162 1.165m2.6-6.761h-.407v-2.077l.402-.004a4.73 4.73 0 0 0 4.715-4.704a4.73 4.73 0 0 0-4.713-4.704l-.404-.002V24.39h.407c3.745 0 6.789 3.04 6.789 6.781s-3.044 6.786-6.789 6.786z" />
                         </svg>
                         <p class="text-title">Dermatology</p>
-                        <p class="text-body">Here are the details of the card</p>
+                        <p class="text-body">Expert skin care services</p>
                     </div>
 
                     <!-- <button class="card-button">More info</button> -->
                 </div>
             </div>
         </section>
-        <!-- <section class="section3">             
+        <!-- <section class="section3">
 
             <div class="object1">
 
@@ -651,12 +718,12 @@
                     });
                 </script>
             </div>
-               
+
         </section> -->
     </main>
 
 
-   
+
     <div id="footer"></div>
     <script>
         // Function to load the header from the header.html file
@@ -681,8 +748,6 @@
 
             // Load the header content when the page loads
 
-
-
             fetch('footer.html')
                 .then(response => response.text())
                 .then(data => {
@@ -690,8 +755,13 @@
                 })
                 .catch(error => console.error('Error loading header:', error));
 
-
-
+            // Add smooth scrolling functionality for the Explore button
+            document.getElementById('explore-btn').addEventListener('click', function () {
+                const clinicsSection = document.getElementById('clinics-section');
+                if (clinicsSection) {
+                    clinicsSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
         }
     </script>
 </body>
