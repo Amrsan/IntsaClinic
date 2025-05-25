@@ -20,6 +20,7 @@
             margin: 0;
             padding: 0;
             font-family: "Montserrat", sans-serif;
+            /* outline: 1px solid red; */
         }
 
         header {
@@ -501,6 +502,119 @@
                 width: 100%;
             }
         }
+
+        /* Responsive App Download Area */
+        .app-download-area {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 60px 0 40px 0;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+        .app-download-content {
+            background: linear-gradient(120deg, #1a5058 80%, #00989D 100%);
+            border-radius: 32px;
+            box-shadow: 0 8px 32px rgba(26, 80, 88, 0.10);
+            padding: 40px 32px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+            max-width: 700px;
+            width: 100%;
+        }
+
+        .app-download-text {
+            flex: 1;
+            min-width: 220px;
+        }
+
+        .app-download-text h2 {
+            color: #fff;
+            font-size: 2rem;
+            margin-bottom: 12px;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .app-download-text p {
+            color: #e0f7fa;
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+
+        .app-store-buttons {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .app-store-buttons img {
+            height: 48px;
+            width: auto;
+            max-width: 160px;
+        }
+
+        .app-download-image {
+            flex: 1;
+            min-width: 160px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .app-download-image img {
+            max-width: 150px;
+            width: 100%;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+            background: #fff;
+        }
+
+        /* Tablet */
+        @media (max-width: 900px) {
+            .app-download-content {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 24px;
+                padding: 32px 16px;
+            }
+
+            .app-download-image {
+                justify-content: center;
+                margin-top: 12px;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .app-download-content {
+                padding: 24px 6px;
+                border-radius: 18px;
+                gap: 18px;
+            }
+
+            .app-download-text h2 {
+                font-size: 1.3rem;
+            }
+
+            .app-download-text p {
+                font-size: 1rem;
+            }
+
+            .app-download-image img {
+                max-width: 100px;
+                border-radius: 12px;
+            }
+
+            .app-store-buttons img {
+                height: 38px;
+                max-width: 120px;
+            }
+        }
     </style>
 </head>
 <template id="header-template">
@@ -618,7 +732,7 @@
                     <!-- <button class="card-button">More info</button> -->
                 </div>
 
-                 <div class="card" onclick="location.href='Orthopedic.html'">
+                <div class="card" onclick="location.href='Orthopedic.html'">
                     <div class="card-details">
                         <i class="fa-solid fa-bone" style="color: #1a5058;"></i>
                         <p class="text-title">Orthopedic</p>
@@ -662,14 +776,14 @@
 
                 <div class="card" onclick="location.href='pediatric.html'">
                     <div class="card-details">
-                        <i class="fa-solid fa-child" " style="color: #1a5058;"></i>
+                        <i class="fa-solid fa-child" " style=" color: #1a5058;"></i>
                         <p class="text-title">Pediatric</p>
                         <p class="text-body">Pediatric care services</p>
                     </div>
                     <!-- <button class="card-button">More info</button> -->
                 </div>
 
-                  <div class="card" onclick="location.href='general-medicine.html'">
+                <div class="card" onclick="location.href='general-medicine.html'">
                     <div class="card-details">
                         <i class="fa-solid fa-medkit" style="color: #1a5058;"></i>
                         <p class="text-title" style="text-align: center;">General medicine</p>
@@ -702,7 +816,42 @@
 
                     <!-- <button class="card-button">More info</button> -->
                 </div>
+                <div class="card" onclick="location.href='animal.html'">
+                    <div class="card-details">
+                        <i class="fa-solid fa-dog" style="color: #1a5058;"></i>
+                        <p class="text-title">Animal care</p>
+                        <p class="text-body">Veterinary services for pets</p>
+                    </div>
+                    <!-- <button class="card-button">More info</button> -->
+                </div>
+
             </div>
+            <!-- App Download Area -->
+            <div class="app-download-area">
+                <div class="app-download-content">
+                    <div class="app-download-text">
+                        <h2>Get the Insta Clinic App</h2>
+                        <p>
+                            Book appointments, manage your health, and access all our services from your phone.<br>
+                            Download now for a seamless healthcare experience!
+                        </p>
+                        <div class="app-store-buttons">
+                            <a href="https://apps.apple.com/" target="_blank">
+                                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                                    alt="Download on the App Store">
+                            </a>
+                            <a href="https://play.google.com/store" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                                    alt="Get it on Google Play">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="app-download-image">
+                        <img src="vertical color.png" alt="App Preview">
+                    </div>
+                </div>
+            </div>
+
         </section>
         <!-- <section class="section3">
 
