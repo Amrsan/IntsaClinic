@@ -444,6 +444,38 @@
                 width: 120%;
             }
 
+            .container:hover> :not(:hover),
+            .section2 .card:hover,
+            .card:hover {
+                opacity: 1 !important;
+                filter: none !important;
+                /* transform: none !important; */
+                box-shadow: none !important;
+            }
+
+            .card:hover .card-button {
+                transform: translate(-50%, 125%) !important;
+                opacity: 0 !important;
+            }
+
+        }
+
+        /* Tablet styles here */
+        @media (min-width: 601px) and (max-width: 900px) {
+
+            .container:hover> :not(:hover),
+            .section2 .card:hover,
+            .card:hover {
+                opacity: 1 !important;
+                filter: none !important;
+                /* transform: none !important; */
+                box-shadow: none !important;
+            }
+
+            .card:hover .card-button {
+                transform: translate(-50%, 125%) !important;
+                opacity: 0 !important;
+            }
 
         }
 
@@ -467,25 +499,8 @@
 
 
             }
-                        /* ...existing code... */
-            
-            /* Remove card hover effect on mobile and tablet */
-            @media (max-width: 900px) {
-                .container:hover > :not(:hover),
-                .section2 .card:hover,
-                .card:hover {
-                    opacity: 1 !important;
-                    filter: none !important;
-                    transform: none !important;
-                    box-shadow: none !important;
-                }
-                .card:hover .card-button {
-                    transform: translate(-50%, 125%) !important;
-                    opacity: 0 !important;
-                }
-            }
-            
-            /* ...existing code... */
+
+
         }
 
         @media only screen and (min-width: 500px) {
@@ -707,7 +722,8 @@
             <div class="container">
                 <div class="card" onclick="location.href='emergency.html'">
                     <div class="card-details">
-                        <img src="SVGs/emergancy.svg" alt="Emergency" style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
+                        <img src="SVGs/emergancy.svg" alt="Emergency"
+                            style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
 
                         <!-- <i class="fa-solid fa-hospital" style="color: #1a5058;"></i> -->
                         <p class="text-title">Emergency</p>
@@ -718,7 +734,8 @@
 
                 <div class="card" onclick="location.href='nursing.html'">
                     <div class="card-details">
-                        <img src="SVGs/home nursing.svg" alt="Nursing" style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
+                        <img src="SVGs/home nursing.svg" alt="Nursing"
+                            style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
                         <!-- <i class="fa-solid fa-user-nurse" style="color: #1a5058;"></i> -->
                         <p class="text-title">Home Nursing</p>
                         <p class="text-body">Professional nursing care services</p>
@@ -728,7 +745,8 @@
 
                 <div class="card" onclick="location.href='dialysis.html'">
                     <div class="card-details">
-                        <img src="SVGs/dialysis.svg" alt="Dialysis" style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
+                        <img src="SVGs/dialysis.svg" alt="Dialysis"
+                            style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
                         <!-- <i class="fa-solid fa-hand-holding-medical" style="color: #1a5058;"></i> -->
                         <p class="text-title">Dialysis</p>
                         <p class="text-body">Comprehensive dialysis services</p>
@@ -738,7 +756,8 @@
 
                 <div class="card" onclick="location.href='Radio.html'">
                     <div class="card-details">
-                        <img src="SVGs/radio.svg" alt="Radiology" style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
+                        <img src="SVGs/radio.svg" alt="Radiology"
+                            style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
                         <!-- <i class="fa-solid fa-radiation" style="color: #1a5058;"></i> -->
                         <p class="text-title">Radiology</p>
                         <p class="text-body">Diagnostic imaging services</p>
@@ -748,7 +767,8 @@
 
                 <div class="card" onclick="location.href='dental.html'">
                     <div class="card-details">
-                        <img src="SVGs/dental.svg" alt="Dental" style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
+                        <img src="SVGs/dental.svg" alt="Dental"
+                            style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
                         <!-- <i class="fa-solid fa-tooth" style="color: #1a5058;"></i> -->
                         <p class="text-title">Dental</p>
                         <p class="text-body">Complete dental care services</p>
@@ -758,7 +778,8 @@
 
                 <div class="card" onclick="location.href='Orthopedic.html'">
                     <div class="card-details">
-                        <img src="SVGs/ortho.svg" alt="Orthopedic" style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
+                        <img src="SVGs/ortho.svg" alt="Orthopedic"
+                            style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
                         <!-- <i class="fa-solid fa-bone" style="color: #1a5058;"></i> -->
                         <p class="text-title">Orthopedic</p>
                         <p class="text-body">Complete dental care services</p>
@@ -768,7 +789,8 @@
 
                 <div class="card" onclick="location.href='Lab.html'">
                     <div class="card-details">
-                        <img src="SVGs/lab.svg" alt="Lab Sampling" style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
+                        <img src="SVGs/lab.svg" alt="Lab Sampling"
+                            style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
                         <!-- <i class="fa-solid fa-microscope" style="color: #1a5058;"></i> -->
                         <p class="text-title">Lab Sampling</p>
                         <p class="text-body">Complete dental care services</p>
@@ -779,7 +801,8 @@
                 <div class="card" onclick="location.href='physio.html'">
                     <div class="card-details">
                         <!-- <i class="fa-solid fa-tooth" style="color: #1a5058;"></i> -->
-                        <img src="SVGs/physiotherapy.svg" alt="Physiotherapy" style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
+                        <img src="SVGs/physiotherapy.svg" alt="Physiotherapy"
+                            style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
 
                         <p class="text-title">Physiotherapy</p>
                         <p class="text-body">Complete Physiotherapy services</p>
@@ -789,7 +812,8 @@
 
                 <div class="card" onclick="location.href='pediatric.html'">
                     <div class="card-details">
-                        <img src="SVGs/pediatric.svg" alt="Pediatric" style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
+                        <img src="SVGs/pediatric.svg" alt="Pediatric"
+                            style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
                         <!-- <i class="fa-solid fa-child" " style=" color: #1a5058;"></i> -->
                         <p class="text-title">Pediatric</p>
                         <p class="text-body">Pediatric care services</p>
@@ -799,7 +823,8 @@
 
                 <div class="card" onclick="location.href='general-medicine.html'">
                     <div class="card-details">
-                        <img src="SVGs/medicine.svg" alt="General Medicine" style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
+                        <img src="SVGs/medicine.svg" alt="General Medicine"
+                            style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
                         <!-- <i class="fa-solid fa-medkit" style="color: #1a5058;"></i> -->
                         <p class="text-title" style="text-align: center;">General medicine</p>
                         <p class="text-body">Providing comprehensive medical care</p>
@@ -809,7 +834,8 @@
 
                 <div class="card" onclick="location.href='general-surgery.html'">
                     <div class="card-details">
-                        <img src="SVGs/surgery.svg" alt="General Surgery" style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
+                        <img src="SVGs/surgery.svg" alt="General Surgery"
+                            style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
                         <!-- <i class="fa-solid fa-syringe" style="color: #1a5058;"></i> -->
                         <p class="text-title" style="text-align: center;">General surgery</p>
                         <p class="text-body">Providing comprehensive surgical care</p>
@@ -820,8 +846,9 @@
 
                 <div class="card" onclick="location.href='dermatology.html'">
                     <div class="card-details">
-                        <img src="SVGs/derma.svg" alt="Dermatology" style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
-                       
+                        <img src="SVGs/derma.svg" alt="Dermatology"
+                            style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
+
                         <p class="text-title">Dermatology</p>
                         <p class="text-body">Expert skin care services</p>
                     </div>
@@ -830,7 +857,8 @@
                 </div>
                 <div class="card" onclick="location.href='animal.html'">
                     <div class="card-details">
-                        <img src="SVGs/animal care.svg" alt="Animal care" style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
+                        <img src="SVGs/animal care.svg" alt="Animal care"
+                            style="width:150px;height:150px;display:block;margin:0 auto 10px auto;">
                         <!-- <i class="fa-solid fa-dog" style="color: #1a5058;"></i> -->
                         <p class="text-title">Animal care</p>
                         <p class="text-body">Veterinary services for pets</p>
@@ -853,7 +881,8 @@
                                 <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                                     alt="Download on the App Store">
                             </a>
-                            <a href="https://play.google.com/store/apps/details?id=com.freshhealth.instaclinic" target="_blank">
+                            <a href="https://play.google.com/store/apps/details?id=com.freshhealth.instaclinic"
+                                target="_blank">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
                                     alt="Get it on Google Play">
                             </a>
