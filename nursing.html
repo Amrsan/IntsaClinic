@@ -138,7 +138,10 @@
         .service-card-description {
             color: #666;
             line-height: 1.6;
+            font-size: 1.05rem;
+            flex: 1;
         }
+
 
         /* Benefits Section */
         .benefits-section {
@@ -286,6 +289,12 @@
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
+        .service-card-list {
+            margin-top: 18px;
+            padding-left: 18px;
+            color: #00989D;
+            font-size: 0.98rem;
+        }
 
         /* Responsive Styles */
         @media only screen and (max-width: 768px) {
@@ -314,7 +323,8 @@
         <section class="hero-section">
             <div class="hero-content">
                 <h1 class="hero-title">Professional Nursing Services</h1>
-                <p class="hero-description">Compassionate and skilled nursing care in the comfort of your home. Our team of registered nurses provides personalized care tailored to your specific health needs.</p>
+                <p class="hero-description">Compassionate and skilled nursing care in the comfort of your home. Our team
+                    of registered nurses provides personalized care tailored to your specific health needs.</p>
                 <button class="hero-cta">Request Nursing Service</button>
             </div>
         </section>
@@ -323,31 +333,65 @@
         <section class="service-details">
             <h2 class="section-title">Our Nursing Services</h2>
             <p style="text-align: center; max-width: 800px; margin: 0 auto; color: #666; line-height: 1.6;">
-                Insta Clinic offers comprehensive nursing services delivered by experienced and compassionate professionals who are dedicated to providing the highest quality of care.
+                Insta Clinic offers comprehensive nursing services delivered by experienced and compassionate
+                professionals who are dedicated to providing the highest quality of care.
             </p>
 
             <div class="service-grid">
+
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Home Care Nursing">
+                    <img src="https://www.athulyahomecare.com/blog/wp-content/uploads/2023/09/The-Benefits-of-Home-Nursing-Services-1200x600-1.jpg"
+                        alt="Post-Surgical Care">
                     <div class="service-card-content">
-                        <h3 class="service-card-title">Home Care Nursing</h3>
-                        <p class="service-card-description">Personalized nursing care in the comfort of your home, including medication management, wound care, and health monitoring.</p>
+                        <h3 class="service-card-title">Elderly care</h3>
+                        <p class="service-card-description"> Compassionate support for seniors, including assistance
+                            with daily activities, medication management, mobility, and health monitoring—helping
+                            elderly patients maintain independence and quality of life at home.
+                        </p>
+                        <ul class="service-card-list">
+                            <li>Assistance with bathing, dressing, and hygiene</li>
+                            <li>Medication reminders and administration</li>
+                            <li>Mobility and fall prevention support</li>
+                            <li>Vital signs and health monitoring</li>
+                            <li>Companionship and emotional support</li>
+                        </ul>
                     </div>
                 </div>
 
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Post-Surgical Care">
-                    <div class="service-card-content">
-                        <h3 class="service-card-title">Post-Surgical Care</h3>
-                        <p class="service-card-description">Specialized nursing support for patients recovering from surgery, ensuring proper healing and preventing complications.</p>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Chronic Disease Management">
+                    <img src="https://kellerfamilymedical.com/wp-content/uploads/2017/05/Disease-Mgmt.jpg"
+                        alt="Chronic Disease Management">
                     <div class="service-card-content">
                         <h3 class="service-card-title">Chronic Disease Management</h3>
-                        <p class="service-card-description">Ongoing nursing support for patients with chronic conditions such as diabetes, heart disease, and respiratory disorders.</p>
+                        <p class="service-card-description">Ongoing nursing support for patients with chronic conditions
+                            such as diabetes, heart disease, and respiratory disorders.</p>
+                        <ul class="service-card-list">
+                            <li>Blood sugar and blood pressure monitoring</li>
+                            <li>Medication management</li>
+                            <li>Diet and lifestyle guidance</li>
+                            <li>Symptom tracking and reporting</li>
+                            <li>Coordination with physicians</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="https://www.stpaulsschoolofnursing.edu/blog/nursing/what-it-s-like-to-be-a-pediatric-nurse/_jcr_content/blog/image.transform/w1000/q85/img.jpeg"
+                        alt="Pediatric Nursing">
+                    <div class="service-card-content">
+                        <h3 class="service-card-title">Pediatric Nursing</h3>
+                        <p class="service-card-description">
+                            Specialized nursing care for infants and children, including medication administration,
+                            monitoring, and support for families managing pediatric health conditions at home.
+                        </p>
+
+                        <ul class="service-card-list">
+                <li>Medication and injection administration</li>
+                <li>Growth and development monitoring</li>
+                <li>Support for chronic pediatric conditions</li>
+                <li>Parental education and guidance</li>
+                <li>Post-hospitalization care</li>
+            </ul>
                     </div>
                 </div>
             </div>
@@ -357,33 +401,39 @@
         <section class="benefits-section">
             <div class="benefits-container">
                 <h2 class="section-title">Benefits of Our Nursing Care</h2>
-                <p style="text-align: center; max-width: 800px; margin: 0 auto; color: #666; line-height: 1.6; margin-bottom: 40px;">
-                    Our nursing services are designed to provide comprehensive care while promoting independence, comfort, and improved quality of life.
+                <p
+                    style="text-align: center; max-width: 800px; margin: 0 auto; color: #666; line-height: 1.6; margin-bottom: 40px;">
+                    Our nursing services are designed to provide comprehensive care while promoting independence,
+                    comfort, and improved quality of life.
                 </p>
 
                 <div class="benefits-grid">
                     <div class="benefit-item">
                         <i class="fas fa-home benefit-icon"></i>
                         <h3 class="benefit-title">Comfort of Home</h3>
-                        <p class="benefit-description">Receive professional nursing care in the familiar and comfortable environment of your own home.</p>
+                        <p class="benefit-description">Receive professional nursing care in the familiar and comfortable
+                            environment of your own home.</p>
                     </div>
 
                     <div class="benefit-item">
                         <i class="fas fa-user-md benefit-icon"></i>
                         <h3 class="benefit-title">Personalized Care</h3>
-                        <p class="benefit-description">Customized care plans tailored to your specific health needs and personal preferences.</p>
+                        <p class="benefit-description">Customized care plans tailored to your specific health needs and
+                            personal preferences.</p>
                     </div>
 
                     <div class="benefit-item">
                         <i class="fas fa-heart benefit-icon"></i>
                         <h3 class="benefit-title">Improved Recovery</h3>
-                        <p class="benefit-description">Studies show patients recover faster and have fewer complications when receiving care in their home environment.</p>
+                        <p class="benefit-description">Studies show patients recover faster and have fewer complications
+                            when receiving care in their home environment.</p>
                     </div>
 
                     <div class="benefit-item">
                         <i class="fas fa-clock benefit-icon"></i>
                         <h3 class="benefit-title">24/7 Availability</h3>
-                        <p class="benefit-description">Round-the-clock nursing services available to ensure continuous care and support.</p>
+                        <p class="benefit-description">Round-the-clock nursing services available to ensure continuous
+                            care and support.</p>
                     </div>
                 </div>
             </div>

@@ -138,6 +138,8 @@
         .service-card-description {
             color: #666;
             line-height: 1.6;
+            font-size: 1.05rem;
+            flex: 1;
         }
 
         /* Approach Section */
@@ -363,6 +365,13 @@
             transition: all 0.3s ease;
         }
 
+        .service-card-list {
+            margin-top: 18px;
+            padding-left: 18px;
+            color: #00989D;
+            font-size: 0.98rem;
+        }
+
         .cta-button:hover {
             background-color: #1a5058;
             color: white;
@@ -405,7 +414,7 @@
                     at Insta Clinic use state-of-the-art imaging technology to provide precise diagnostics and support
                     your healthcare journey.
                 </p>
-                <button class="hero-cta">Book a Radiology Appointment</button>
+                <button class="hero-cta" id="radiology-cta">Book a Radiology Appointment</button>
             </div>
         </section>
 
@@ -426,8 +435,16 @@
                         <h3 class="service-card-title">Digital X-Ray</h3>
                         <p class="service-card-description">
                             High-resolution digital X-rays for bones, chest, and joints. Quick, low-dose imaging for
-                            accurate diagnosis of fractures, infections, and lung conditions.
+                            accurate diagnosis of fractures, infections, and lung conditions in your houese to make sure
+                            you're healthy and safe at the same time.
                         </p>
+                        <ul class="service-card-list">
+                            <li>Bone and joint imaging</li>
+                            <li>Chest X-rays for lung and heart evaluation</li>
+                            <li>Detection of fractures and infections</li>
+                            <li>Low radiation dose technology</li>
+                            <li>Immediate digital results</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -438,8 +455,16 @@
                         <h3 class="service-card-title">Ultrasound (Sonography)</h3>
                         <p class="service-card-description">
                             Non-invasive imaging for abdominal, pelvic, thyroid, vascular, and pregnancy assessments.
-                            Safe for all ages, including prenatal and pediatric care.
+                            Safe for all ages, including prenatal and pediatric care in your home for your safety and
+                            comfort.
                         </p>
+                        <ul class="service-card-list">
+                            <li>Abdominal and pelvic ultrasound</li>
+                            <li>Pregnancy and fetal assessment</li>
+                            <li>Thyroid and neck imaging</li>
+                            <li>Vascular Doppler studies</li>
+                            <li>Pediatric and adult applications</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -450,8 +475,16 @@
                         <h3 class="service-card-title">CT Scan</h3>
                         <p class="service-card-description">
                             Advanced cross-sectional imaging for detailed evaluation of internal organs, trauma, tumors,
-                            and vascular diseases. Fast, precise, and comfortable.
+                            and vascular diseases. Fast, precise, and comfortable in your home for your safety and
+                            comfort.
                         </p>
+                        <ul class="service-card-list">
+                            <li>Head and brain CT</li>
+                            <li>Chest, abdomen, and pelvis scans</li>
+                            <li>Trauma and emergency imaging</li>
+                            <li>Tumor and cancer assessment</li>
+                            <li>Vascular and angiography studies</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -474,6 +507,7 @@
                             results.
                         </p>
                         <ul class="approach-list">
+                            <li>Making sure you are safe and comfortable in your home environment</li>
                             <li>Board-certified radiologists and experienced technologists</li>
                             <li>Low-dose protocols and non-invasive techniques</li>
                             <li>Fast turnaround for reports and images</li>
@@ -574,6 +608,9 @@
                     document.getElementById('footer').innerHTML = data;
                 })
                 .catch(error => console.error('Error loading footer:', error));
+            document.getElementById('radiology-cta').addEventListener('click', function () {
+                window.location.href = "index.html#app-download-area";
+            });
         }
     </script>
 </body>
