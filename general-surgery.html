@@ -135,9 +135,18 @@
             color: #1a5058;
         }
 
-        .service-card-description {
+       .service-card-description {
             color: #666;
             line-height: 1.6;
+            font-size: 1.05rem;
+            flex: 1;
+        }
+
+        .service-card-list {
+            margin-top: 18px;
+            padding-left: 18px;
+            color: #00989D;
+            font-size: 0.98rem;
         }
 
         /* Treatments Section */
@@ -375,7 +384,9 @@
             <div class="hero-content">
                 <h1 class="hero-title">General Surgery Services</h1>
                 <p class="hero-description">
-                    Comprehensive surgical care with a focus on safety, precision, and patient well-being. Our expert general surgeons at Insta Clinic provide advanced surgical solutions for a wide range of conditions, ensuring the highest standards of care from consultation to recovery.
+                    Comprehensive surgical care with a focus on safety, precision, and patient well-being. Our expert
+                    general surgeons at Insta Clinic provide advanced surgical solutions for a wide range of conditions,
+                    ensuring the highest standards of care from consultation to recovery.
                 </p>
                 <button class="hero-cta">Book a Surgical Consultation</button>
             </div>
@@ -385,37 +396,66 @@
         <section class="service-details">
             <h2 class="section-title">Our General Surgery Services</h2>
             <p style="text-align: center; max-width: 800px; margin: 0 auto; color: #666; line-height: 1.6;">
-                Insta Clinic offers a full spectrum of general surgical procedures, from minimally invasive techniques to complex operations. Our multidisciplinary team utilizes the latest technology and evidence-based practices to deliver optimal outcomes for every patient.
+                Insta Clinic offers a full spectrum of general surgical procedures, from minimally invasive techniques
+                to complex operations. Our multidisciplinary team utilizes the latest technology and evidence-based
+                practices to deliver optimal outcomes for every patient.
             </p>
 
             <div class="service-grid">
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?auto=format&fit=crop&w=800&q=80" alt="Laparoscopic Surgery">
+                    <img src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?auto=format&fit=crop&w=800&q=80"
+                        alt="Laparoscopic Surgery">
                     <div class="service-card-content">
                         <h3 class="service-card-title">Laparoscopic (Keyhole) Surgery</h3>
                         <p class="service-card-description">
-                            Minimally invasive procedures for gallbladder removal, appendectomy, hernia repair, and more. Benefits include smaller incisions, less pain, and faster recovery.
+                            Minimally invasive procedures for gallbladder removal, appendectomy, hernia repair, and
+                            more. Benefits include smaller incisions, less pain, and faster recovery.
                         </p>
+                        <ul class="service-card-list">
+                            <li>Gallbladder removal (cholecystectomy)</li>
+                            <li>Appendectomy</li>
+                            <li>Hernia repair (inguinal, umbilical, incisional)</li>
+                            <li>Exploratory laparoscopy</li>
+                            <li>Shorter hospital stay and recovery time</li>
+                        </ul>
                     </div>
                 </div>
 
                 <div class="service-card">
-                    <img src="https://images.pexels.com/photos/305568/pexels-photo-305568.jpeg?auto=compress&w=800&q=80" alt="Hernia Surgery">
+                    <img src="https://images.pexels.com/photos/305568/pexels-photo-305568.jpeg?auto=compress&w=800&q=80"
+                        alt="Hernia Surgery">
                     <div class="service-card-content">
                         <h3 class="service-card-title">Hernia Surgery</h3>
                         <p class="service-card-description">
-                            Expert repair of inguinal, umbilical, and incisional hernias using both open and laparoscopic techniques for durable, long-term results.
+                            Expert repair of inguinal, umbilical, and incisional hernias using both open and
+                            laparoscopic techniques for durable, long-term results.
                         </p>
+                        <ul class="service-card-list">
+                            <li>Inguinal hernia repair</li>
+                            <li>Umbilical hernia repair</li>
+                            <li>Incisional and ventral hernia repair</li>
+                            <li>Minimally invasive and open approaches</li>
+                            <li>Mesh and non-mesh options</li>
+                        </ul>
                     </div>
                 </div>
 
                 <div class="service-card">
-                    <img src="https://images.pexels.com/photos/2324837/pexels-photo-2324837.jpeg?auto=compress&w=800&q=80" alt="Breast & Thyroid Surgery">
+                    <img src="https://images.pexels.com/photos/2324837/pexels-photo-2324837.jpeg?auto=compress&w=800&q=80"
+                        alt="Breast & Thyroid Surgery">
                     <div class="service-card-content">
                         <h3 class="service-card-title">Breast & Thyroid Surgery</h3>
                         <p class="service-card-description">
-                            Surgical management of benign and malignant breast and thyroid conditions, including biopsies, lumpectomies, mastectomies, and thyroidectomies.
+                            Surgical management of benign and malignant breast and thyroid conditions, including
+                            biopsies, lumpectomies, mastectomies, and thyroidectomies.
                         </p>
+                        <ul class="service-card-list">
+                            <li>Breast lump evaluation and biopsy</li>
+                            <li>Lumpectomy and mastectomy</li>
+                            <li>Thyroid nodule assessment and biopsy</li>
+                            <li>Partial and total thyroidectomy</li>
+                            <li>Parathyroid surgery</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -425,8 +465,10 @@
         <section class="treatments-section">
             <div class="treatments-container">
                 <h2 class="section-title">Specialized Surgical Procedures</h2>
-                <p style="text-align: center; max-width: 800px; margin: 0 auto; color: #666; line-height: 1.6; margin-bottom: 40px;">
-                    Our surgeons are skilled in a variety of advanced procedures, ensuring safe and effective treatment tailored to your needs.
+                <p
+                    style="text-align: center; max-width: 800px; margin: 0 auto; color: #666; line-height: 1.6; margin-bottom: 40px;">
+                    Our surgeons are skilled in a variety of advanced procedures, ensuring safe and effective treatment
+                    tailored to your needs.
                 </p>
 
                 <div class="treatments-grid">
@@ -434,28 +476,32 @@
                         <i class="fas fa-user-md treatment-icon"></i>
                         <h3 class="treatment-title">Appendectomy</h3>
                         <p class="treatment-description">
-                            Emergency and elective removal of the appendix, performed with minimally invasive techniques for rapid recovery.
+                            Emergency and elective removal of the appendix, performed with minimally invasive techniques
+                            for rapid recovery.
                         </p>
                     </div>
                     <div class="treatment-item">
                         <i class="fas fa-heartbeat treatment-icon"></i>
                         <h3 class="treatment-title">Gallbladder Surgery (Cholecystectomy)</h3>
                         <p class="treatment-description">
-                            Laparoscopic and open removal of the gallbladder for gallstones, infections, and other biliary conditions.
+                            Laparoscopic and open removal of the gallbladder for gallstones, infections, and other
+                            biliary conditions.
                         </p>
                     </div>
                     <div class="treatment-item">
                         <i class="fas fa-procedures treatment-icon"></i>
                         <h3 class="treatment-title">Hemorrhoid & Anal Surgery</h3>
                         <p class="treatment-description">
-                            Surgical and non-surgical management of hemorrhoids, anal fissures, fistulas, and pilonidal disease.
+                            Surgical and non-surgical management of hemorrhoids, anal fissures, fistulas, and pilonidal
+                            disease.
                         </p>
                     </div>
                     <div class="treatment-item">
                         <i class="fas fa-stethoscope treatment-icon"></i>
                         <h3 class="treatment-title">Skin & Soft Tissue Surgery</h3>
                         <p class="treatment-description">
-                            Excision of cysts, lipomas, abscess drainage, and treatment of skin lesions with a focus on minimal scarring.
+                            Excision of cysts, lipomas, abscess drainage, and treatment of skin lesions with a focus on
+                            minimal scarring.
                         </p>
                     </div>
                 </div>
@@ -466,34 +512,44 @@
         <section class="before-after-section">
             <div class="before-after-container">
                 <h2 class="section-title">Our Surgical Approach</h2>
-                <p style="text-align: center; max-width: 800px; margin: 0 auto; color: #666; line-height: 1.6; margin-bottom: 40px;">
-                    We prioritize patient safety, comfort, and education at every stage. From preoperative assessment to postoperative care, our team ensures you are informed and supported throughout your surgical journey.
+                <p
+                    style="text-align: center; max-width: 800px; margin: 0 auto; color: #666; line-height: 1.6; margin-bottom: 40px;">
+                    We prioritize patient safety, comfort, and education at every stage. From preoperative assessment to
+                    postoperative care, our team ensures you are informed and supported throughout your surgical
+                    journey.
                 </p>
 
                 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px; margin-top: 40px;">
                     <div style="flex: 1; min-width: 300px;">
                         <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80"
-                            alt="General Surgery Team" style="width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
+                            alt="General Surgery Team"
+                            style="width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
                     </div>
                     <div style="flex: 1; min-width: 300px;">
-                        <h3 style="font-size: 1.5rem; margin-bottom: 20px; color: #1a5058;">Personalized Surgical Care</h3>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 20px; color: #1a5058;">Personalized Surgical Care
+                        </h3>
                         <p style="color: #666; line-height: 1.8; margin-bottom: 20px;">
-                            Every patient receives a customized treatment plan, clear communication, and compassionate care from our multidisciplinary team.
+                            Every patient receives a customized treatment plan, clear communication, and compassionate
+                            care from our multidisciplinary team.
                         </p>
                         <ul style="list-style: none; margin-top: 20px;">
-                            <li style="margin-bottom: 15px; padding-left: 30px; position: relative; color: #666; line-height: 1.6;">
+                            <li
+                                style="margin-bottom: 15px; padding-left: 30px; position: relative; color: #666; line-height: 1.6;">
                                 <i class="fas fa-check-circle" style="color: #00989D; position: absolute; left: 0;"></i>
                                 Thorough preoperative evaluation and risk assessment
                             </li>
-                            <li style="margin-bottom: 15px; padding-left: 30px; position: relative; color: #666; line-height: 1.6;">
+                            <li
+                                style="margin-bottom: 15px; padding-left: 30px; position: relative; color: #666; line-height: 1.6;">
                                 <i class="fas fa-check-circle" style="color: #00989D; position: absolute; left: 0;"></i>
                                 Minimally invasive options whenever possible
                             </li>
-                            <li style="margin-bottom: 15px; padding-left: 30px; position: relative; color: #666; line-height: 1.6;">
+                            <li
+                                style="margin-bottom: 15px; padding-left: 30px; position: relative; color: #666; line-height: 1.6;">
                                 <i class="fas fa-check-circle" style="color: #00989D; position: absolute; left: 0;"></i>
                                 Comprehensive postoperative follow-up and recovery support
                             </li>
-                            <li style="margin-bottom: 15px; padding-left: 30px; position: relative; color: #666; line-height: 1.6;">
+                            <li
+                                style="margin-bottom: 15px; padding-left: 30px; position: relative; color: #666; line-height: 1.6;">
                                 <i class="fas fa-check-circle" style="color: #00989D; position: absolute; left: 0;"></i>
                                 Patient education and family involvement in care decisions
                             </li>
