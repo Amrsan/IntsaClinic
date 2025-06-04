@@ -125,10 +125,10 @@
             padding-top: 40px;
             height: 65vh;
             background-repeat: no-repeat;
-            background-size: cover;
             padding: 100px 20px;
             background-color: #eee;
-            /* background-image: url("pexels-juanpphotoandvideo-1242348.jpg"); */
+            /* background-image: url("SVGs/wave\ BG.svg"); */
+            background-size: cover;
             /* box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25); */
 
 
@@ -140,16 +140,18 @@
             padding: 20px;
             justify-content: space-around;
             align-items: center;
-            background-attachment: fixed;
             background-position: center;
             align-items: center;
             display: flex;
             padding-top: 80px;
             height: auto;
-            background-size: cover;
+            background-size: fixed;
             /* background-color: #eee; */
             flex-wrap: wrap;
             background-color: #eee;
+            /* background-image: url("SVGs/wave\ BG.svg"); */
+            background-attachment: cover;
+
             /* background-image: url("BG\ pattern-10.jpg"); */
 
 
@@ -650,6 +652,32 @@
                 height: 38px;
                 max-width: 120px;
             }
+
+        }
+
+        .app-store-btn-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
+        .coming-soon-msg {
+            display: none;
+            position: absolute;
+            left: 50%;
+            top: -35px;
+            transform: translateX(-50%);
+            background: #222;
+            color: #fff;
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            white-space: nowrap;
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        .app-store-btn-wrapper:hover .coming-soon-msg {
+            display: block;
         }
     </style>
 </head>
@@ -878,10 +906,16 @@
                             Download now for a seamless healthcare experience!
                         </p>
                         <div class="app-store-buttons">
-                            <a href="https://apps.apple.com/" target="_blank">
+                            <!-- <a href="https://apps.apple.com/" target="_blank">
                                 <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                                     alt="Download on the App Store">
-                            </a>
+                            </a> -->
+                            <div class="app-store-btn-wrapper">
+                                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                                    alt="Download on the App Store" class="app-store-btn"
+                                    style="cursor: not-allowed; opacity: 0.7;">
+                                <span class="coming-soon-msg">Coming soon</span>
+                            </div>
                             <a href="https://play.google.com/store/apps/details?id=com.freshhealth.instaclinic"
                                 target="_blank">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
