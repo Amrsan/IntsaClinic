@@ -32,8 +32,8 @@ window.PAYMOB_CALLBACK_URLS = {
     callbackUrl: window.location.origin + '/paymob-callback.html',
 
     // Where to redirect after processing
-    successPageUrl: window.location.origin + '/IntsaClinic/success.html',
-    failurePageUrl: window.location.origin + '/IntsaClinic/failure.html',
+    successPageUrl: window.location.origin + '/success.html',
+    failurePageUrl: window.location.origin + '/failure.html',
 
     // Alternative: You can set specific URLs if needed
     // callbackUrl: window.location.origin + '/paymob-callback.html?type=callback',
